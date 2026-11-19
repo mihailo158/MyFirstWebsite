@@ -3,114 +3,224 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DentaCare — Стоматологічна клініка (Демо)</title>
+  <title>DentaCare — Преміальна стоматологія</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
 
   <header class="header">
     <div class="container nav-wrap">
       <a href="#" class="logo">Denta<span>Care</span></a>
       <nav class="nav">
-        <a href="#services">Послуги та ціни</a>
+        <a href="#services">Послуги</a>
         <a href="#doctors">Лікарі</a>
-        <a href="#booking" class="btn-small">Записатися</a>
+        <a href="#faq">Питання</a>
+        <a href="#booking" class="btn-nav">Записатися</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
-    <div class="container hero-content">
-      <span class="badge">Демо-проєкт для портфоліо</span>
-      <h1>Сучасна стоматологія без болю та страху</h1>
-      <p>Профілактика, лікування карієсу, професійна гігієна та імплантація. Комфортний прийом у центрі Івано-Франківська.</p>
-      <div class="hero-actions">
-        <a href="#booking" class="btn-primary">Записатися на консультацію</a>
-        <a href="#services" class="btn-secondary">Дивитися ціни</a>
+    <div class="container hero-grid">
+      <div class="hero-text" data-aos="fade-up">
+        <span class="badge">● Івано-Франківськ • Преміум-клініка</span>
+        <h1>Стоматологія, до якої <span class="gradient-text">не страшно</span> повертатись</h1>
+        <p>Лікування під мікроскопом, комп'ютерна анестезія та естетична реставрація. Без болю, черг і прихованих доплат.</p>
+        <div class="hero-actions">
+          <a href="#booking" class="btn-primary">Записатися на прийом</a>
+          <a href="#services" class="btn-glass">Прайс-лист</a>
+        </div>
+        <div class="stats">
+          <div>
+            <strong>10+</strong>
+            <span>років досвіду</span>
+          </div>
+          <div>
+            <strong>4 200+</strong>
+            <span>здорових усмішок</span>
+          </div>
+          <div>
+            <strong>5.0 ★</strong>
+            <span>рейтинг Google</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos="zoom-in" data-aos-delay="150">
+        <div class="image-frame">
+          <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=85" alt="Сучасний стоматологічний кабінет">
+          <div class="floating-card">
+            <span class="dot"></span>
+            <div>
+              <strong>Вільні вікна на завтра</strong>
+              <small>Прийом за 15 хв без черги</small>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="services" class="section">
     <div class="container">
-      <h2 class="section-title">Послуги та орієнтовні ціни</h2>
+      <div class="section-head" data-aos="fade-up">
+        <span class="section-tag">Напрямки</span>
+        <h2>Послуги та прозорі ціни</h2>
+      </div>
+
       <div class="grid">
-        <div class="card">
-          <h3>Консультація та огляд</h3>
-          <p>Повна діагностика стану зубів, складання індивідуального плану лікування.</p>
-          <span class="price">500 грн</span>
+        <div class="card spotlight" data-aos="fade-up" data-aos-delay="0">
+          <div class="card-icon">01</div>
+          <h3>Консультація + 3D-план</h3>
+          <p>Детальний огляд, фотопротокол зубів та чіткий кошторис лікування без сюрпризів.</p>
+          <div class="card-footer">
+            <span class="price">500 грн</span>
+            <a href="#booking" class="link-arrow">Обрати →</a>
+          </div>
         </div>
-        <div class="card">
+
+        <div class="card spotlight" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-icon">02</div>
           <h3>Професійна гігієна</h3>
-          <p>Ультразвукове зняття зубного каменю, Air-Flow та полірування емалі.</p>
-          <span class="price">1 600 грн</span>
+          <p>Швейцарський протокол GBT: ультразвук, м'який Air-Flow та ремінералізація емалі.</p>
+          <div class="card-footer">
+            <span class="price">1 600 грн</span>
+            <a href="#booking" class="link-arrow">Обрати →</a>
+          </div>
         </div>
-        <div class="card">
+
+        <div class="card spotlight" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-icon">03</div>
           <h3>Лікування карієсу</h3>
-          <p>Атравматичне видалення уражених тканин і фотополімерна пломба.</p>
-          <span class="price">від 1 400 грн</span>
+          <p>Робота під мікроскопом із збереженням здорових тканин та японською фотополімерною пломбою.</p>
+          <div class="card-footer">
+            <span class="price">від 1 400 грн</span>
+            <a href="#booking" class="link-arrow">Обрати →</a>
+          </div>
         </div>
-        <div class="card">
-          <h3>Відбілювання зубів</h3>
-          <p>Безпечне офісне відбілювання з мінімальною чутливістю після процедури.</p>
-          <span class="price">4 500 грн</span>
+
+        <div class="card spotlight" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-icon">04</div>
+          <h3>Офісне відбілювання</h3>
+          <p>Освітлення на 4–6 тонів за один візит із захистом ясен і мінімальною чутливістю.</p>
+          <div class="card-footer">
+            <span class="price">4 500 грн</span>
+            <a href="#booking" class="link-arrow">Обрати →</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="doctors" class="section section-alt">
+  <section id="doctors" class="section">
     <div class="container">
-      <h2 class="section-title">Наші спеціалісти (демо)</h2>
-      <div class="grid">
-        <div class="card doctor-card">
-          <div class="avatar">ОК</div>
+      <div class="section-head" data-aos="fade-up">
+        <span class="section-tag">Команда</span>
+        <h2>Лікарі, яким довіряють</h2>
+      </div>
+
+      <div class="grid doctors-grid">
+        <div class="card doctor-card spotlight" data-aos="fade-up" data-aos-delay="0">
+          <div class="doctor-photo">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=500&q=80" alt="Олександр Коваль">
+          </div>
           <h3>Олександр Коваль</h3>
-          <p class="role">Стоматолог-терапевт</p>
+          <span class="role">Стоматолог-терапевт</span>
           <p>Спеціалізується на естетичній реставрації та мікроскопічному лікуванні каналів.</p>
         </div>
-        <div class="card doctor-card">
-          <div class="avatar">МБ</div>
+
+        <div class="card doctor-card spotlight" data-aos="fade-up" data-aos-delay="100">
+          <div class="doctor-photo">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80" alt="Марія Бойко">
+          </div>
           <h3>Марія Бойко</h3>
-          <p class="role">Лікар-ортодонт</p>
-          <p>Виправлення прикусу брекет-системами та прозорими елайнерами.</p>
+          <span class="role">Лікар-ортодонт</span>
+          <p>Виправлення прикусу керамічними брекетами та прозорими елайнерами.</p>
         </div>
-        <div class="card doctor-card">
-          <div class="avatar">ІМ</div>
+
+        <div class="card doctor-card spotlight" data-aos="fade-up" data-aos-delay="200">
+          <div class="doctor-photo">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=500&q=80" alt="Ігор Мельник">
+          </div>
           <h3>Ігор Мельник</h3>
-          <p class="role">Хірург-імплантолог</p>
-          <p>Безболісне видалення зубів мудрості та встановлення дентальних імплантів.</p>
+          <span class="role">Хірург-імплантолог</span>
+          <p>Атравматичне видалення зубів мудрості та встановлення дентальних імплантів.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section">
+    <div class="container faq-wrap">
+      <div class="section-head" data-aos="fade-up">
+        <span class="section-tag">FAQ</span>
+        <h2>Часті запитання</h2>
+      </div>
+
+      <div class="faq-list" data-aos="fade-up">
+        <div class="faq-item">
+          <button class="faq-question">Чи боляче лікувати зуби? <span>+</span></button>
+          <div class="faq-answer">Ні. Перед уколом ми наносимо спеціальний знеболювальний гель, а саму анестезію вводимо повільно та без дискомфорту.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Скільки триває перша консультація? <span>+</span></button>
+          <div class="faq-answer">Зазвичай 30–40 хвилин. Лікар робить повний огляд, відповідає на всі питання і складає точний план лікування з цінами.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">Чи є гарантія на пломби та імпланти? <span>+</span></button>
+          <div class="faq-answer">Так, на всі реставрації діє офіційна гарантія клініки за умови профілактичного огляду раз на 6 місяців.</div>
         </div>
       </div>
     </div>
   </section>
 
   <section id="booking" class="section">
-    <div class="container booking-box">
-      <h2 class="section-title">Запис на прийом</h2>
-      <p class="booking-sub">Залиште контакти — адміністратор передзвонить протягом 15 хвилин.</p>
-      <form id="bookingForm" class="form">
-        <input type="text" id="name" placeholder="Ваше ім'я" required>
-        <input type="tel" id="phone" placeholder="+38 (0__) ___-__-__" required>
-        <select id="service">
-          <option value="Консультація та огляд">Консультація та огляд</option>
-          <option value="Професійна гігієна">Професійна гігієна</option>
-          <option value="Лікування карієсу">Лікування карієсу</option>
-          <option value="Відбілювання зубів">Відбілювання зубів</option>
-        </select>
-        <button type="submit" class="btn-primary">Надіслати заявку</button>
-      </form>
-      <p id="formMessage" class="form-message"></p>
+    <div class="container" data-aos="zoom-in">
+      <div class="booking-box">
+        <span class="section-tag">Онлайн-запис</span>
+        <h2>Запишіться за 30 секунд</h2>
+        <p class="booking-sub">Залиште контакти або запитання — повідомлення одразу прийде адміністратору.</p>
+
+        <form id="bookingForm" class="form">
+          <div class="form-row">
+            <input type="text" name="name" id="name" placeholder="Ваше ім'я" required>
+            <input type="tel" name="phone" id="phone" placeholder="+38 (0__) ___-__-__" required>
+          </div>
+          <select name="service" id="service">
+            <option value="Консультація + 3D-план">Консультація + 3D-план (500 грн)</option>
+            <option value="Професійна гігієна">Професійна гігієна (1 600 грн)</option>
+            <option value="Лікування карієсу">Лікування карієсу (від 1 400 грн)</option>
+            <option value="Офісне відбілювання">Офісне відбілювання (4 500 грн)</option>
+          </select>
+          <textarea name="message" id="userMessage" rows="3" placeholder="Коментар або бажаний час (необов'язково)"></textarea>
+          <button type="submit" id="submitBtn" class="btn-primary">Надіслати заявку</button>
+        </form>
+        <p id="formMessage" class="form-message"></p>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container">
-      <p><strong>DentaCare</strong> — Демонстраційний сайт | вул. Незалежності, 10 (приклад), Івано-Франківськ</p>
-      <p>Пн–Сб: 09:00 – 20:00 | Тел: +38 (099) 000-00-00</p>
+    <div class="container footer-wrap">
+      <div>
+        <a href="#" class="logo">Denta<span>Care</span></a>
+        <p>Демо-сайт для портфоліо • Івано-Франківськ</p>
+      </div>
+      <div class="footer-right">
+        <p>Пн–Сб: 09:00 – 20:00</p>
+        <p>+38 (099) 000-00-00</p>
+      </div>
     </div>
   </footer>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
