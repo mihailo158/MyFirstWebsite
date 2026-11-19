@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DentaCare — Стоматологічна клініка (Демо)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="#" class="logo">Denta<span>Care</span></a>
+      <nav class="nav">
+        <a href="#services">Послуги та ціни</a>
+        <a href="#doctors">Лікарі</a>
+        <a href="#booking" class="btn-small">Записатися</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="badge">Демо-проєкт для портфоліо</span>
+      <h1>Сучасна стоматологія без болю та страху</h1>
+      <p>Профілактика, лікування карієсу, професійна гігієна та імплантація. Комфортний прийом у центрі Івано-Франківська.</p>
+      <div class="hero-actions">
+        <a href="#booking" class="btn-primary">Записатися на консультацію</a>
+        <a href="#services" class="btn-secondary">Дивитися ціни</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title">Послуги та орієнтовні ціни</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Консультація та огляд</h3>
+          <p>Повна діагностика стану зубів, складання індивідуального плану лікування.</p>
+          <span class="price">500 грн</span>
+        </div>
+        <div class="card">
+          <h3>Професійна гігієна</h3>
+          <p>Ультразвукове зняття зубного каменю, Air-Flow та полірування емалі.</p>
+          <span class="price">1 600 грн</span>
+        </div>
+        <div class="card">
+          <h3>Лікування карієсу</h3>
+          <p>Атравматичне видалення уражених тканин і фотополімерна пломба.</p>
+          <span class="price">від 1 400 грн</span>
+        </div>
+        <div class="card">
+          <h3>Відбілювання зубів</h3>
+          <p>Безпечне офісне відбілювання з мінімальною чутливістю після процедури.</p>
+          <span class="price">4 500 грн</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="doctors" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Наші спеціалісти (демо)</h2>
+      <div class="grid">
+        <div class="card doctor-card">
+          <div class="avatar">ОК</div>
+          <h3>Олександр Коваль</h3>
+          <p class="role">Стоматолог-терапевт</p>
+          <p>Спеціалізується на естетичній реставрації та мікроскопічному лікуванні каналів.</p>
+        </div>
+        <div class="card doctor-card">
+          <div class="avatar">МБ</div>
+          <h3>Марія Бойко</h3>
+          <p class="role">Лікар-ортодонт</p>
+          <p>Виправлення прикусу брекет-системами та прозорими елайнерами.</p>
+        </div>
+        <div class="card doctor-card">
+          <div class="avatar">ІМ</div>
+          <h3>Ігор Мельник</h3>
+          <p class="role">Хірург-імплантолог</p>
+          <p>Безболісне видалення зубів мудрості та встановлення дентальних імплантів.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="section">
+    <div class="container booking-box">
+      <h2 class="section-title">Запис на прийом</h2>
+      <p class="booking-sub">Залиште контакти — адміністратор передзвонить протягом 15 хвилин.</p>
+      <form id="bookingForm" class="form">
+        <input type="text" id="name" placeholder="Ваше ім'я" required>
+        <input type="tel" id="phone" placeholder="+38 (0__) ___-__-__" required>
+        <select id="service">
+          <option value="Консультація та огляд">Консультація та огляд</option>
+          <option value="Професійна гігієна">Професійна гігієна</option>
+          <option value="Лікування карієсу">Лікування карієсу</option>
+          <option value="Відбілювання зубів">Відбілювання зубів</option>
+        </select>
+        <button type="submit" class="btn-primary">Надіслати заявку</button>
+      </form>
+      <p id="formMessage" class="form-message"></p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p><strong>DentaCare</strong> — Демонстраційний сайт | вул. Незалежності, 10 (приклад), Івано-Франківськ</p>
+      <p>Пн–Сб: 09:00 – 20:00 | Тел: +38 (099) 000-00-00</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
